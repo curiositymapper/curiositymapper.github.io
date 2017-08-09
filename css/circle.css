@@ -1,0 +1,54 @@
+.round-button {
+  display:block;
+  float: left;
+  height: 30px;
+  width: 30px;
+  border-radius: 30%;
+  border: 1px solid black;
+  margin: 5px;
+}
+
+.circlered{
+  display:block;
+  background-color: red;
+  float: left;
+  height: 30px;
+  width: 30px;
+  border-radius: 30%;
+  border: 1px solid black;
+  margin: 5px;
+}
+
+.circleblue{
+  display:block;
+  background-color: blue;
+  float: left;
+  height: 30px;
+  width: 30px;
+  border-radius: 30%;
+  border: 1px solid black;
+  margin: 5px;
+}
+
+.circlegreen{
+  display:block;
+  background-color: green;
+  float: left;
+  height: 30px;
+  width: 30px;
+  border-radius: 30%;
+  border: 1px solid black;
+  margin: 5px;
+}
+
+
+.circleblack{
+  display:block;
+  background-color: black;
+  float: left;
+  height: 30px;
+  width: 30px;
+  border-radius: 30%;
+  border: 1px solid black;
+  margin: 5px;
+}

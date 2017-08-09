@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Curiosity Mapper</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/freelancer.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="css/circle.css" rel="stylesheet" type="text/css">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index">
+<div id="skipnav"><a href="#maincontent">Skip to main content</a></div>
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#page-top">Play the game</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#portfolio">Play</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container" id="maincontent" tabindex="-1">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img class="img-responsive" src="img/profile.png" alt="">
+                    <div class="intro-text">
+                        <h1 class="name">Curiosity Mapper</h1>
+                        <hr class="star-light">
+                        <span class="skills">Play mastermind and help us map curiosity</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+         <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>About</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 col-lg-offset-2">
+                    <p>Curiosity Mapper is a research project conducted by Eric Schulz and Jonathan Nelson of the Max-Planck-Institute for Human Development. We assess curiosity using the game Mastermind.</p>
+                </div>
+                <div class="col-sm-4">
+                    <p>Mastermind is a quintessential game of curiosity. A computer generates a secret code which you have to guess by repeatedly entering codes and receiving feedback. We hope you will enjoy it!</p>
+                </div>                
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio" class="success">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Play</h2>
+                    <hr class="star-light">
+                     <div class="col-sm-4">
+                        <p>Enter a code and receive feedback</p><br>
+                        <center>
+                        <img class="img-responsive" src="img/enter.png" alt="">
+                        </center>
+                     </div>   
+                     <div class="col-sm-4">
+                        <p>Think logically and act curiosly</p><br>
+                        <center>
+                        <img class="img-responsive" src="img/think.png" alt="">
+                        </center>
+                     </div> 
+                     <div class="col-sm-4">
+                        <p>Repeat until you win</p><br>
+                        <center>
+                        <img class="img-responsive" src="img/win.png" alt="">
+                         <br><br><br>
+                        </center>
+                     </div>
+                     <button type="submit" class="btn-social" onclick="startExperiment()"><font color="black">Play</font></button>                            
+                </div>
+            </div>
+            <div class="row">           
+            </div>
+        </div>
+    </section>
+     <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Contact Us</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
+                    <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
+                    <form name="sentMessage" id="contactForm" novalidate>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label for="email">Email Address</label>
+                                <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label for="message">Message</label>
+                                <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <br>
+                        <div id="success"></div>
+                        <div class="row">
+                            <div class="form-group col-xs-12">
+                                <button type="submit" class="btn btn-success btn-lg">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>  
+
+<div id="consent" class="container" style="display:none">
+    <p>By clicking on the button below, you agree to the following:</p>
+    <ul>
+    <li>I have read the above information.</li>
+    <li>I understand that I am free to withdraw from the study without penalty.</li>
+    <li>I consent to the processing of my data for the purposes of this study only.</li> 
+    <li>I understand that the data I have submitted will be published as a report. Confidentiality and anonymity will be maintained.</li>
+    </ul>
+    <br>
+    <button type="button" name="button";  class="btn btn-default"; onclick="clickStart('consent','page3')"; >Agree</button>
+</div>
+
+<div id="page3" class="container" style="display:none">
+    <fieldset>
+            <div style="float:left;width:400px;margin:5px">
+            How old are you?<br>
+            <input id="age1" type="radio" name="age1" value="20" >18-25<br>
+            <input id="age2" type="radio" name="age2" value="30" >26-35<br>
+            <input id="age3" type="radio" name="age3" value="40" >36-50<br>
+            <input id="age4" type="radio" name="age4" value="50" >above 50<br>
+            </div>
+            <div style="float:left;width:400px;margin:5px">
+            What's your gender?<br>
+            <input id="gender1" type="radio" name="gender1" value="0" >Female<br>
+            <input id="gender2" type="radio" name="gender2" value="1" >Male<br>
+            </div>
+    </fieldset>
+    <br>
+    Choose a nickname: <input type="text" id="nickname"; value=""><br>
+    <div style="width:50px;margin:0 auto">
+     <button type="button" name="button"; onclick="checkstart()"; >Done</button>
+    </div>
+</div>
+
+<div id="page4" class="container" style="display:none">
+      <!-- Begin page content -->
+       <div class="page-header">
+          <h1> <font size="4">Guess the secret code</font> </h1>
+        </div>
+         <div id="explainshow" style="display:block">
+         <p> <b>Explanation:</b></p><br>
+         <p><b>I.</b>At the beginning of each game, the computer generates a secret code of four colors. The colors are always chosen from the following four colors: red, blue, green, and black. Duplicates are allowed, so the computer could even choose the same color four times.</p>
+         <p><b>II.</b>Your objective is to guess the secret code. You will have to guess both the colors and the order in the secret code. </p>
+         <p><b>III.</b>Choose four colors in the next available row by repeatedly clicking on the buttons. Click on the “Check” button to submit a guess. The computer will give you feedback in the following way. For each guess that is right in both color and position you will get a smiling face. For each guess that is right in color but not in position you get a neutral face. For each guess that is wrong in both color and position you get a frowning face. The position of the faces are not related to the position of the colors in your guess.</p>
+         <p><b>IV.</b>You have ten guesses in total. If you exhaust all of them without guessing the secret code, you lost the game.</p>
+         <p><b>V.</b>The computer generates the code by first creating a bowl with different scoops of colors and then sampling from this bowl. More scoops of a given color will make this color more likely to appear in the secret code. Below, you will see how many scoops of different colors the computer put in the bowl before generating the code.</p>
+         <button type="button" name="button"; class="btn btn-default";  onclick="clickStart('explainshow','explainhide')"; >Hide explanation</button>
+         </div>
+         <div id="explainhide" style="display:none">
+         <button type="button" name="button"; class="btn btn-default"; onclick="clickStart('explainhide','explainshow')"; >Show explanation</button>
+        </div>
+       <div style="width:300px;margin:0 auto">
+      <center>
+      <b><div id="remaining">Number of guesses left: 10</div></b>
+      <b><div id="scoops">5</div></b>
+      <br>
+      <div id="insert"></div>
+      <br>
+      <div style="line-height:0%" align="center">
+           <div class="round-button-circle"><a onclick="change(n=0)" id="peg0" class="round-button"></a></div>
+           <div class="round-button-circle"><a onclick="change(n=1)" id="peg1" class="round-button"></a></div>
+           <div class="round-button-circle"><a onclick="change(n=2)" id="peg2" class="round-button"></a></div>
+           <div class="round-button-circle"><a onclick="change(n=3)" id="peg3" class="round-button"></a></div>
+    </div>
+   <button type="button" name="button"; class="btn btn-default"; onclick="submit()"; >Check</button>
+  </center> 
+   </div>
+</div>
+
+<div id="page5" style="display:none">
+    <h3>This game has finished. </h3>
+    <p> Thank you for helping us to investigate curiosity. </p>
+    <p> If you have any questions, please write an email to <font color="blue">eschulz@mpib-berlin.mpg.de</font></p><br>
+    <button type="button" name="button" class="btn btn-default"; onclick="playagain()"; >Play again.</button> 
+    <button type="button" name="button" class="btn btn-default"; onclick="mainpage()"; >Back to main page.</button>    
+   
+</div>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/freelancer.min.js"></script>
+    <script src='https://cdn.firebase.com/js/client/1.1.1/firebase.js'></script>
+    <script src="js/curiosity.js"></script>
+
+
+</body>
+
+</html>
