@@ -43,7 +43,7 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="#page-top">Play the game</a>
+                <a class="navbar-brand" onclick="startExperiment()" href="#page-top">Play the game</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -262,7 +262,7 @@
          <div id="explainshow" style="display:block">
          <p> <b>Explanation:</b></p>
          <p>At the beginning of each game, the computer generates a secret code of four colors. The colors are chosen from the following four colors: red, blue, green, and black. Duplicates are allowed, so the computer could even choose the same color four times.</p>
-         <p>Your objective is to guess the secret code. You will have to guess both the colors and the order in the secret code. </p>
+         <p>Your objective is to guess the secret code. You will have to guess both the colors and their order in the secret code. </p>
          <p>Choose four colors in the next available row by repeatedly clicking on the buttons. Click on the “Check” button to submit a guess. The computer will give you feedback in the following way. For each guess that is right in both color and position you will get a smiling face. For each guess that is right in color but not in position you get a neutral face. For each guess that is wrong in both color and position you get a frowning face. The position of the faces are not related to the position of the colors in your guess.</p>
          <p>You have ten guesses in total. If you exhaust all of them without guessing the secret code, you lost the game.</p>
          <p>The computer generates the code by first creating a bowl with different scoops of colors and then sampling from this bowl. More scoops of a given color will make this color more likely to appear in the secret code. Below, you will see how many scoops of different colors the computer put in the bowl before generating the code.</p>
