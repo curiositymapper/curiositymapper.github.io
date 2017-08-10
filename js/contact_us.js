@@ -19,7 +19,7 @@ $(function() {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-                url: "//formspree.io/hanshalbe@gmail.com",
+                url: "//formspree.io/hanshalbe@googlemail.com",
                 method: "POST",
                 data: {
                     name: name,
@@ -74,3 +74,4 @@ $(function() {
 /*When clicking on Full hide fail/success boxes */
 $('#name').focus(function() {
     $('#success').html('');
+});
