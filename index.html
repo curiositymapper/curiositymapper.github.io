@@ -185,6 +185,7 @@
     </section>  
 
 <div id="consent" class="container" style="display:none">
+    <br>
     <p>By clicking on the button below, you agree to the following:</p>
     <ul>
     <li>I have read the above information.</li>
@@ -196,22 +197,57 @@
     <button type="button" name="button";  class="btn btn-default"; onclick="clickStart('consent','page3')"; >Agree</button>
 </div>
 
-<div id="page3" class="container" style="display:none">
-    <fieldset>
-            <div style="float:left;width:400px;margin:5px">
-            How old are you?<br>
-            <input id="age1" type="radio" name="age1" value="20" >18-25<br>
-            <input id="age2" type="radio" name="age2" value="30" >26-35<br>
-            <input id="age3" type="radio" name="age3" value="40" >36-50<br>
-            <input id="age4" type="radio" name="age4" value="50" >above 50<br>
+ <div class="container" id="page3" style="display:none">
+      <form id="demographics">
+        <!-- Title -->
+        <div class="row">
+          <div class="col-md-6">
+            <br>
+            <p>Please tell us something about yourself.</p>
+          </div>
+        </div>
+        <!-- Age -->
+        <div class="row">
+          <div class="col-lg-6">
+            <h4>Age</h4>
+            <div class="input-group input-group-lg">
+              <label class="radio-inline">
+                <input id="age1" type="radio" name="age" value="18-25" />18-25
+              </label>
+              <label class="radio-inline">
+                <input id="age2" type="radio" name="age" value="26-35" />26-35
+              </label>
+              <label class="radio-inline">
+                <input id="age3" type="radio" name="age" value="36-45" />36-45
+              </label>
+              <label class="radio-inline">
+                <input id="age4" type="radio" name="age" value="46-55" />46-55
+              </label>
+              <label class="radio-inline">
+                <input id="age5" type="radio" name="age" value="56-65" />56-65
+              </label>
+              <label class="radio-inline">
+                <input id="age6" type="radio" name="age" value="66+" />66+
+              </label>
             </div>
-            <div style="float:left;width:400px;margin:5px">
-            What's your gender?<br>
-            <input id="gender1" type="radio" name="gender1" value="0" >Female<br>
-            <input id="gender2" type="radio" name="gender2" value="1" >Male<br>
-            </div>
-    </fieldset>
-    <br>
+          </div>
+        </div>
+        <!-- Gender -->
+        <div class="row">
+          <div class="col-lg-6">
+            <h4>Gender</h4>
+            <div class="input-group input-group-lg">
+              <label class="radio-inline">
+                <input id="gender1" type="radio" name="gender" value="female" />Female
+              </label>
+              <label class="radio-inline">
+                <input id="gender2" type="radio" name="gender" value="male" />Male
+              </label>
+            </div><!-- /input-group -->
+          </div><!-- /.col-lg-6 -->
+        </div>
+      </form>
+      <br>
     Choose a nickname: <input type="text" id="nickname"; maxlength="10"; size="10"; value=""><br>
     <div style="width:50px;margin:0 auto">
      <button type="button" name="button"; onclick="checkstart()"; >Done</button>

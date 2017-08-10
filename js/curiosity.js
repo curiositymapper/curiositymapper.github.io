@@ -84,6 +84,9 @@ function checkstart()
   if (document.getElementById('age2').checked) {age = 30}
   if (document.getElementById('age3').checked) {age = 40}
   if (document.getElementById('age4').checked) {age = 50}
+  if (document.getElementById('age5').checked) {age = 60}
+  if (document.getElementById('age6').checked) {age = 70}
+
   if (age===90){alert("Please enter your age.")}
   var gender=3;
   if (document.getElementById('gender1').checked) {gender = 1}
