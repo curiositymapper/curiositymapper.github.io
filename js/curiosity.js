@@ -45,7 +45,21 @@ function startExperiment()
 
 function mainpage()
 {
-
+       insert='';
+       index = 0;
+       cols=["#FFFFFF", "#FF0000", "#0000FF", "#008000", "#000000"];
+       colpos=[0,0,0,0];
+       truth=["#FF0000", "#FF0000", "#008000", "#008000"];
+       chosen=[];
+       colortracker=[];
+       correcttracker=[];
+       positiontracker=[];
+       chosen=[];
+       update("remaining",'Number of guesses left: ' +(10-index));
+       update("insert", insert);
+       colpos=[-1,-1,-1,-1];
+       change(0);change(1);change(2);change(3);
+       sampletruth();
        document.getElementById('contact').style.display="block";
        document.getElementById('about').style.display="block";
        document.getElementById('portfolio').style.display="block";

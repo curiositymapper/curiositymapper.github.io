@@ -212,7 +212,7 @@
             </div>
     </fieldset>
     <br>
-    Choose a nickname: <input type="text" id="nickname"; value=""><br>
+    Choose a nickname: <input type="text" id="nickname"; maxlength="10"; size="10"; value=""><br>
     <div style="width:50px;margin:0 auto">
      <button type="button" name="button"; onclick="checkstart()"; >Done</button>
     </div>
@@ -253,12 +253,11 @@
    </div>
 </div>
 
-<div id="page5" style="display:none">
+<div id="page5" class="container" style="display:none">
     <h3>This game has finished. </h3>
     <p> Thank you for helping us to investigate curiosity. </p>
-    <p> If you have any questions, please write an email to <font color="blue">eschulz@mpib-berlin.mpg.de</font></p><br>
-    <button type="button" name="button" class="btn btn-default"; onclick="playagain()"; >Play again.</button> 
-    <button type="button" name="button" class="btn btn-default"; onclick="mainpage()"; >Back to main page.</button>    
+    <button type="button" name="button" class="btn btn-default"; onclick="playagain()"; >Play again</button> 
+    <button type="button" name="button" class="btn btn-default"; onclick="mainpage()"; >Back to main page</button>    
    
 </div>
 
