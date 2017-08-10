@@ -101,7 +101,7 @@ function checkstart()
 //sample a truth with different entropies
 function sampletruth()
 {
-  var balls=[[5,2,1,0],[4,2,1,1],[3,2,2,1], [2,2,2,2]]
+  var balls=[[12,2,1,1],[8,4,2,2],[6,4,4,2], [4,4,4,4]]
   chosen=shuffle(balls)[0];
   chosen=shuffle(chosen);
   var options=[];
